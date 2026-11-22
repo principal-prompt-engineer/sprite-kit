@@ -1,0 +1,28 @@
+{
+ "name": "mychar",
+ "title": "My Game",
+ "genre": "a top-down puzzle game for adults",
+ "frame": { "w": 128, "h": 128 },
+ "cols": 8,
+ "anchor": { "x": 64, "y": 120 },
+ "margin": 4,
+ "standing_height": 84,
+ "background": { "mode": "chroma", "name": "magenta", "hex": "#FF00FF" },
+ "align_x": "centroid",
+ "default_fps": 8,
+ "tint": { "hue_ref": "#B60D18", "tolerance_deg": 18, "min_sat": 0.45 },
+ "reference_views": ["front view", "three-quarter view", "side view facing right", "back view"],
+ "character": "ONE paragraph, fully self-contained: what it is, proportions, exact hex colours per part, outline colour and thickness, shading style, light direction, camera angle, default facing. If a tint colour is used, say which parts (and only those) use it and that no other red/pink/orange may appear anywhere.",
+ "rows": [
+  {
+   "id": "idle_wave",
+   "title": "IDLE + WAVE",
+   "note": "What this row is for and anything special (props, view, colours to avoid).",
+   "frames": [
+    { "name": "Idle 1", "desc": "Standing relaxed, neutral expression. Idle loop frame 1.", "stand": true },
+    { "name": "Idle 2", "desc": "Idle loop frame 2: small bob up." },
+    { "name": "Jump", "desc": "Both feet off the ground, arms up.", "anchor": "air", "lift": 14 }
+   ]
+  }
+ ]
+}
